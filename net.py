@@ -97,7 +97,7 @@ class DecoderLayer(nn.Module):
 
 
 class DecoderTransformer(nn.Module):
-    def __init__(self, vocab_size, d_model=786, num_heads=12, num_layers=12, 
+    def __init__(self, vocab_size, d_model=512, num_heads=8, num_layers=6, 
                  d_ff=3072, max_seq_length=5000, dropout=0.1):
         super(DecoderTransformer, self).__init__()
         
